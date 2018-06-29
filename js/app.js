@@ -30,6 +30,7 @@ Enemy.prototype.render = function() {
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
+const player = new Player();
 
 
 // This listens for key presses and sends the keys to your
@@ -42,5 +43,5 @@ document.addEventListener('keyup', function(e) {
         40: 'down'
     };
 
-    player.handleInput(allowedKeys[e.keyCode]);
+  //  player.handleInput(allowedKeys[e.keyCode]);
 });
