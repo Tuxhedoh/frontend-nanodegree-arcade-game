@@ -16,17 +16,27 @@ class Entity {
 class Enemy extends Entity {
     constructor(){
         super();
-        
-        this.x = 0;
+        this.x = Math.ceil((Math.random()*-3))-1;
         this.y = Math.ceil((Math.random()*3));
         this.sprite+="enemy-bug.png"
     }
     update(dt){
         // console.log(dt)
-        if(this.x < 5)
+        if(this.x < 5){
             this.x+=1*dt;
-        else ( this.x=-1 
-        )
+        }
+        else { 
+            // this.x=-1*(Math.random()*5);       
+            this.remove();
+        }
+    }
+    remove(){
+        let index = allEnemies.indexOf(this);
+        if (index > -1){
+            allEnemies.splice(index,1);
+        }
+        allEnemies.push(new Enemy());
+
     }
 }
 

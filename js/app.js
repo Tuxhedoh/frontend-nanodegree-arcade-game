@@ -29,10 +29,13 @@
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-
+const numEnemies = 6;
 const player = new Player();
 const allEnemies = [];
-allEnemies.push(new Enemy());
+for(let i =1; i<=numEnemies; i++){
+    allEnemies.push(new Enemy());
+}
+
 
 
 // This listens for key presses and sends the keys to your
