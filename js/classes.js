@@ -11,7 +11,22 @@ class Entity {
 
     update(){
         
-
+    }
+}
+class Enemy extends Entity {
+    constructor(){
+        super();
+        
+        this.x = 0;
+        this.y = Math.ceil((Math.random()*3));
+        this.sprite+="enemy-bug.png"
+    }
+    update(dt){
+        // console.log(dt)
+        if(this.x < 5)
+            this.x+=1*dt;
+        else ( this.x=-1 
+        )
     }
 }
 
