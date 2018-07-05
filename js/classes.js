@@ -26,7 +26,6 @@ class Enemy extends Entity {
             this.x+=1*dt;
         }
         else { 
-            // this.x=-1*(Math.random()*5);       
             this.remove();
         }
     }
@@ -36,7 +35,12 @@ class Enemy extends Entity {
             allEnemies.splice(index,1);
         }
         allEnemies.push(new Enemy());
-
+    }
+    checkCollisions(){
+        if(this.y === player.y && this.x > player.x-.5){
+            player.reset();
+            this.remove();
+        }
     }
 }
 
@@ -47,6 +51,12 @@ class Player extends Entity {
         this.y = 5;
         this.sprite +="char-boy.png";
     }    
+
+    reset(){
+        this.x =2;
+        this.y=5;
+
+    }
 
     handleInput(event){
         if(event === "up" && player.y > 0){
