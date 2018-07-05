@@ -23,6 +23,20 @@ class Player extends Entity {
         this.sprite +="char-boy.png";
     }    
 
+    handleInput(event){
+        if(event === "up" && player.y > 0){
+            this.y-=1;
+        }
+        if(event === "down" && player.y <5){
+            this.y+=1;
+        }
+        if(event === "left" && player.x >0){
+            this.x-=1;
+        }
+        if(event === "right" && player.x <4){
+            this.x+=1;
+        }
+    }
 
 }
 
