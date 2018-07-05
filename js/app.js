@@ -1,6 +1,6 @@
-
+const winModal = document.getElementById('winModal');
 // Place the player object in a variable called player
-const numEnemies = 1;
+const numEnemies = 8;
 const player = new Player();
 const allEnemies = [];
 for(let i =1; i<=numEnemies; i++){
@@ -21,3 +21,11 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
+
+function checkWin(player){
+    if(player.y ==0){
+            console.log("You Win!");
+            // Display Win Modal
+            winModal.style.display = "block";
+    }
+}

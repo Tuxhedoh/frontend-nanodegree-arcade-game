@@ -37,7 +37,8 @@ class Enemy extends Entity {
         allEnemies.push(new Enemy());
     }
     checkCollisions(){
-        if(this.y === player.y && this.x > player.x-.5){
+        if((this.y === player.y) && (this.x > player.x-.5 && this.x-.7 < player.x)){
+            console.log(player.x +" "+ this.x)
             player.reset();
             this.remove();
         }
