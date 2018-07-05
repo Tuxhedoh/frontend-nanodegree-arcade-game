@@ -14,5 +14,5 @@ In order to play this game, load it in your web-browser. Use the arrow keys to m
 * Vary the speed and number of bugs on the screen
 
 ## Resources
-[Remove Enemies from Array](https://stackoverflow.com/questions/5767325/how-do-i-remove-a-particular-element-from-an-array-in-javascript)
-[@Rodrick's Walk-through](https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000) got me started.
+* [Remove Enemies from Array](https://stackoverflow.com/questions/5767325/how-do-i-remove-a-particular-element-from-an-array-in-javascript)
+* [@Rodrick's Walk-through](https://zoom.us/recording/play/aulotDlzKFegQFIJTaTzKgWvNkVsYtlwO454vL1UPE1Cm6lOUBQCtfVurPOIAGAS?startTime=1529542978000) got me started.
